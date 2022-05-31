@@ -16,19 +16,12 @@ import java.util.Map;
  * @author yangxin
  * 1/12/21 12:09 AM
  */
+@SuppressWarnings({"AlibabaRemoveCommentedCode"})
 @Component
 @Slf4j
 public class RabbitSender {
 
     private final RabbitTemplate rabbitTemplate;
-
-//    final RabbitTemplate.ConfirmCallback confirmCallback = (correlationData, ack, cause) -> {
-//        System.err.println("correlationData: " + correlationData);
-//        System.err.println("ack: " + ack);
-//        if(!ack){
-//            System.err.println("异常处理....");
-//        }
-//    };
 
     /**
      * 消息入队列的回调
